@@ -2,7 +2,8 @@
 
 This repo showcases how you can build your own UI to connect users to [embedded wallets](https://portal.thirdweb.com/embedded-wallet) using email or google sign in React Native.
 
-![screenshot](screenshot.png)
+<img width="358" alt="Screenshot 2023-11-06 at 3 40 02 PM" src="https://github.com/thirdweb-example/embedded-wallet-custom-ui-react-native/assets/121973632/d6fbc5c5-c83a-4b23-a93f-70fa704a1a59">
+
 
 ## Getting Started
 
