@@ -1,54 +1,56 @@
-# React Native + thirdweb + TypeScript Starter Template
+# Embedded Wallets with Custom UI
 
-Got questions? Jump into our [Discord](https://discord.gg/thirdweb) to speak with us directly.
+This repo showcases how you can build your own UI to connect users to [embedded wallets](https://portal.thirdweb.com/embedded-wallet) using email or google sign in React Native.
+
+![screenshot](screenshot.png)
 
 ## Getting Started
 
-Create a project using this example:
+Clone this project or create a new project using this template:
 
 ```bash
-npx thirdweb create --template react-native-typescript-starter
+npx thirdweb create --template embedded-wallet-custom-ui-react-native
 ```
 
-Install dependencies:
+You can start editing the screen by modifying `src/App.tsx`.
+
+On `scr/App.tsx`, you'll find our `ThirdwebProvider` wrapping your app, this is necessary for our [hooks](https://portal.thirdweb.com/react) and
+[UI Components](https://portal.thirdweb.com/ui-components) to work.
+
+## Environment Variables
+
+To run this project, you will need to add environment variables. Check the `.env` file for all the environment variables required and add it to `.env.local` file or set them up on your hosting provider.
+
+## Runing the project
+
+Install dependencies
 
 ```bash
-yarn install # or npm install
+yarn install
 ```
 
-If you are developing on iOS, you will need to install the pods:
+Run project
 
 ```bash
-cd ios && pod install
-```
-
-## Get a clientId
-
-You can [get your clientId](https://thirdweb.com/dashboard/settings/api-keys) from our Dashboard and set it in the `.env` file.
-
-Please, make sure to add your app's `bundleId` in the Allowed Bundle IDs list. Here's more info on [how to get your app's bundleId](https://portal.thirdweb.com/api-keys#how-to-get-my-bundleid)
-
-## Running the app
-
-Android:
-
-```
 yarn android
 ```
 
-iOS:
+or
 
-```
-yarn ios
+```bash
+cd ios && pod install
+cd ../ && yarn ios
 ```
 
 ## Learn More
 
 To learn more about thirdweb and React Native, take a look at the following resources:
 
-- [thirdweb Portal](https://portal.thirdweb.com) - check our guides and development resources.
-- [thirdweb SDK](https://portal.thirdweb.com/sdk) - check our guides and development resources.
-- [React Native Documentation](https://reactnative.dev/) - learn about React Native features and API.
+- [thirdweb Embedded Wallet Documentation](https://portal.thirdweb.com/embedded-wallet) - learn about our Embedded Wallets.
+- [thirdweb ReactNative Documentation](https://docs.thirdweb.com/react-native) - learn about our React Native SDK.
+- [thirdweb TypeScript Documentation](https://docs.thirdweb.com/typescript) - learn about our JavaScript/TypeScript SDK.
+- [thirdweb Portal](https://docs.thirdweb.com) - check our guides and development resources.
+- [Templates](https://thirdweb.com/templates)
 
 You can check out [the thirdweb GitHub organization](https://github.com/thirdweb-dev) - your feedback and contributions are welcome!
 
