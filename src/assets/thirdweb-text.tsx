@@ -3,7 +3,7 @@ import Svg, {Defs, LinearGradient, Stop, Text} from 'react-native-svg';
 
 export const ThirdwebText = () => {
   return (
-    <Svg height="30" width="160">
+    <Svg height="30" width="180">
       <Defs>
         <LinearGradient id="gradientText0" x1="0%" y1="0%" x2="0%" y2="100%">
           <Stop offset="0%" stopColor="#bfa3da" />

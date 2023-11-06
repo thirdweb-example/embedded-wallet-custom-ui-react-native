@@ -15,7 +15,13 @@ import {
 } from '@thirdweb-dev/react-native';
 import React, {useEffect, useState} from 'react';
 import {TW_CLIENT_ID} from '@env';
-import {ActivityIndicator, Alert, Linking} from 'react-native';
+import {
+  ActivityIndicator,
+  Alert,
+  Linking,
+  SafeAreaView,
+  StyleSheet,
+} from 'react-native';
 import {GoogleIcon} from './assets/google-icon';
 import {EmailIcon} from './assets/email-icon';
 import {ThirdwebText} from './assets/thirdweb-text';
@@ -32,7 +38,9 @@ const App = () => {
       activeChain={activeChain}
       clientId={TW_CLIENT_ID}
       supportedWallets={[embeddedWallet()]}>
-      <Home />
+      <SafeAreaView style={styles.safe}>
+        <Home />
+      </SafeAreaView>
     </ThirdwebProvider>
   );
 };
@@ -263,3 +271,7 @@ const CustomLogin = () => {
 };
 
 export default App;
+
+const styles = StyleSheet.create({
+  safe: {flex: 1, backgroundColor: 'black'},
+});
