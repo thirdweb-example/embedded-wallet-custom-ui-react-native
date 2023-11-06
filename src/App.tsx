@@ -52,8 +52,6 @@ const Home = () => {
   const connectionStatus = useConnectionStatus();
   const disconnect = useDisconnect();
 
-  console.log('connectedWallet', {connectedWallet});
-
   useEffect(() => {
     if (connectedWallet) {
       setEmail((connectedWallet as EmbeddedWallet)?.getEmail());
@@ -189,6 +187,7 @@ const CustomLogin = () => {
           }}
           containerProps={{
             width: 200,
+            paddingLeft: 'xs',
           }}
         />
         <BaseButton
@@ -231,6 +230,7 @@ const CustomLogin = () => {
           }}
           containerProps={{
             width: 200,
+            paddingLeft: 'xs',
           }}
         />
         <BaseButton
